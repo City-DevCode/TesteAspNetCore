@@ -8,7 +8,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     .AddCookie(options =>
     {
         options.LoginPath = "/Usuario/Logar";
-        //options.AccessDeniedPath = "/Usuario/AcessoNegado";
+        options.AccessDeniedPath = "/Usuario/AcessoNegado";
     });
 
 builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
